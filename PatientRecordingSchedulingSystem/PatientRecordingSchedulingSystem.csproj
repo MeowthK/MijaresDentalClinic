@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B00B7A2E-1E56-4A16-B409-A980F85A7823}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PatientRecordingSchedulingSystem</RootNamespace>
+    <AssemblyName>PatientRecordingSchedulingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account_LoginVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_LoginVerification.Designer.cs">
+      <DependentUpon>Account_LoginVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Account_Settings.Designer.cs">
+      <DependentUpon>Account_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account_Settings2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Account_Settings2.Designer.cs">
+      <DependentUpon>Account_Settings2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddAppointment.Designer.cs">
+      <DependentUpon>AddAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddPatient.Designer.cs">
+      <DependentUpon>AddPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatient2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddPatient2.Designer.cs">
+      <DependentUpon>AddPatient2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatient3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddPatient3.Designer.cs">
+      <DependentUpon>AddPatient3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatient4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddPatient4.Designer.cs">
+      <DependentUpon>AddPatient4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment_Walkin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Appointment_Walkin.Designer.cs">
+      <DependentUpon>Appointment_Walkin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DateTimePick.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DateTimePick.Designer.cs">
+      <DependentUpon>DateTimePick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBInterface.cs" />
+    <Compile Include="generalAddress.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeUI.Designer.cs">
+      <DependentUpon>HomeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentCMB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ParentCMB.Designer.cs">
+      <DependentUpon>ParentCMB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParentPanel.Designer.cs">
+      <DependentUpon>ParentPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs" />
+    <Compile Include="PatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientInfo.Designer.cs">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientList.Designer.cs">
+      <DependentUpon>PatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundedButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoundedButton.Designer.cs">
+      <DependentUpon>RoundedButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundedPanel.Designer.cs">
+      <DependentUpon>RoundedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundedText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoundedText.Designer.cs">
+      <DependentUpon>RoundedText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sickness.cs" />
+    <Compile Include="TermsAndAgreement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermsAndAgreement.Designer.cs">
+      <DependentUpon>TermsAndAgreement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIController.cs" />
+    <EmbeddedResource Include="Account_LoginVerification.resx">
+      <DependentUpon>Account_LoginVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account_Settings.resx">
+      <DependentUpon>Account_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account_Settings2.resx">
+      <DependentUpon>Account_Settings2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAppointment.resx">
+      <DependentUpon>AddAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPatient.resx">
+      <DependentUpon>AddPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPatient2.resx">
+      <DependentUpon>AddPatient2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPatient3.resx">
+      <DependentUpon>AddPatient3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPatient4.resx">
+      <DependentUpon>AddPatient4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointment_Walkin.resx">
+      <DependentUpon>Appointment_Walkin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateTimePick.resx">
+      <DependentUpon>DateTimePick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeUI.resx">
+      <DependentUpon>HomeUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentCMB.resx">
+      <DependentUpon>ParentCMB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentPanel.resx">
+      <DependentUpon>ParentPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientInfo.resx">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientList.resx">
+      <DependentUpon>PatientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RoundedButton.resx">
+      <DependentUpon>RoundedButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundedPanel.resx">
+      <DependentUpon>RoundedPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundedText.resx">
+      <DependentUpon>RoundedText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TermsAndAgreement.resx">
+      <DependentUpon>TermsAndAgreement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
